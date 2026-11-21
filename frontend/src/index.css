@@ -1,0 +1,173 @@
+@import "tailwindcss";
+
+:root {
+    --bg: #f6f8fb;
+    --bg-soft: #eef3f8;
+    --panel: #ffffff;
+    --panel-alt: #f8fafc;
+    --panel-strong: #eaf4ff;
+    --line: #e2e8f0;
+    --text: #0f172a;
+    --text-muted: #475569;
+    --primary: #2563eb;
+    --primary-soft: #eff6ff;
+    --success: #14b8a6;
+    --warning: #f59e0b;
+    --danger: #ef4444;
+    --shadow: 0 1px 3px rgba(15, 23, 42, 0.05), 0 8px 24px rgba(15, 23, 42, 0.04);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    background: var(--bg);
+    color: var(--text);
+    font-family:
+        Inter,
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+#root {
+    min-height: 100vh;
+}
+
+.app-shell {
+    display: flex;
+    min-height: 100vh;
+    background: var(--bg);
+}
+
+.page-content {
+    flex: 1;
+    padding: 1.5rem;
+}
+
+.card {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 0.875rem;
+    box-shadow: var(--shadow);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem 1.125rem;
+    border-bottom: 1px solid var(--line);
+}
+
+.card-body {
+    padding: 1.125rem;
+}
+
+.input,
+select.input,
+textarea.input {
+    width: 100%;
+    border: 1px solid var(--line);
+    background: var(--panel);
+    color: var(--text);
+    border-radius: 0.85rem;
+    padding: 0.75rem 0.9rem;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input:focus,
+select.input:focus,
+textarea.input:focus {
+    border-color: rgba(37, 99, 235, 0.5);
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.08);
+}
+
+select.input option {
+    color: var(--text);
+    background: var(--panel);
+}
+
+button,
+[role="button"] {
+    transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+/* A few older screens still use dark-theme utility colors. Keep them legible
+   while those components share the same clean light workspace. */
+.page-content .text-white { color: #0f172a; }
+.page-content .text-slate-200 { color: #1e293b; }
+.page-content .text-slate-300 { color: #334155; }
+.page-content .text-slate-400 { color: #475569; }
+.page-content .text-slate-600 { color: #64748b; }
+.page-content .text-sky-400, .page-content .text-cyan-400 { color: #0369a1; }
+.page-content .text-blue-400 { color: #1d4ed8; }
+.page-content .text-green-400 { color: #15803d; }
+.page-content .text-emerald-400 { color: #047857; }
+.page-content .text-yellow-400 { color: #a16207; }
+.page-content .text-orange-400 { color: #c2410c; }
+.page-content .text-red-400 { color: #b91c1c; }
+.page-content .text-violet-400, .page-content .text-purple-400 { color: #6d28d9; }
+.page-content .text-teal-400 { color: #0f766e; }
+.page-content button.bg-blue-600 { color: #fff; }
+.page-content .border-border { border-color: #e2e8f0; }
+.page-content [class*="bg-[#091625]"],
+.page-content [class*="bg-[#060e18]"] { background-color: #f8fafc; }
+.page-content [class*="bg-white/[0.02]"] { background-color: #f8fafc; }
+
+:focus-visible {
+    outline: 3px solid rgba(37, 99, 235, 0.35);
+    outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #edf2f7;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+@media (max-width: 1024px) {
+    .page-content {
+        padding: 1rem;
+    }
+}

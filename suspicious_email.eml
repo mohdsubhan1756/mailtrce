@@ -1,0 +1,24 @@
+From: "Example Account Team" <security@example-support.invalid>
+To: Alex Example <alex@example.net>
+Reply-To: helpdesk@account-check.invalid
+Return-Path: <bounce@notice-mail.invalid>
+Date: Thu, 24 Sep 2026 10:15:00 +0000
+Message-ID: <urgent-account-review-20260924@notice-mail.invalid>
+Subject: URGENT: Account access will be suspended today
+MIME-Version: 1.0
+Received: from unknown-host.invalid (unknown-host.invalid [198.51.100.42]) by mx.example.net with ESMTP id SUSPICIOUS001; Thu, 24 Sep 2026 10:15:03 +0000
+Authentication-Results: mx.example.net; spf=fail smtp.mailfrom=notice-mail.invalid; dkim=fail header.d=notice-mail.invalid; dmarc=fail header.from=example-support.invalid
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=notice-mail.invalid; s=demo; h=from:to:subject:date; bh=YWJjZA==; b=ZGVtbw==
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Alex,
+
+Your account will be permanently suspended unless you verify your password within 30 minutes.
+
+Verify your account now:
+http://198.51.100.77/login/verify
+
+If you did not request this review, reply with your password so our security team can cancel the suspension.
+
+This is a synthetic security-analysis sample. The .invalid domains and documentation-only IP addresses are reserved examples and are not real service endpoints.

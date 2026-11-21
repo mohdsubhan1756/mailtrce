@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+python-multipart
+pymongo
+pydantic
+python-dotenv
+pytest
+httpx
+dnspython
+cryptography
+geoip2
+publicsuffix2
+reportlab

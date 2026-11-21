@@ -1,0 +1,77 @@
+From: <alice@github.com>
+To: "Bob Smith" <bob@github.com>, "Project Team" <team@github.com>
+Cc: "Carol Davis" <carol@github.com>
+Date: Mon, 14 Sep 2026 09:25:00 +0000
+Message-ID: <20260914092500.12345@github.com>
+Subject: Project Meeting Confirmation and Agenda
+Reply-To: <alice@github.com>
+Return-Path: <alice@github.com>
+Sender: <alice@github.com>
+MIME-Version: 1.0
+User-Agent: MailTrace-Benign-Test/1.0
+Received: from mailout.github.com (mailout.github.com [203.0.113.10])
+	by mx.github.com with ESMTPS id ABC12345
+	for <bob@github.com>; Mon, 14 Sep 2026 09:24:58 +0000
+Received: from workstation.github.com (workstation.github.com [198.51.100.20])
+	by mailout.github.com with ESMTP id DEF45678; Mon, 14 Sep 2026 09:24:50 +0000
+Received: from laptop.github.com (laptop.github.com [192.30.252.1])
+	by workstation.github.com with ESMTP id GHI78901; Mon, 14 Sep 2026 09:24:42 +0000
+Received-SPF: pass (github.com: domain of alice@github.com designates 192.30.252.1 as permitted sender) client-ip=192.30.252.1;
+Authentication-Results: mx.github.com;
+	dkim=pass header.i=@github.com header.s=s1;
+	spf=pass (github.com: domain of alice@github.com designates 192.30.252.1 as permitted sender) smtp.mailfrom=alice@github.com;
+	dmarc=pass (p=quarantine sp=reject dis=none) header.from=github.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=github.com; s=s1; p=present;
+    t=1726305900; bh=YWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWE=;
+    h=From:To:Subject:Date:Message-ID:MIME-Version:Content-Type;
+    b=YmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmI=
+Content-Type: multipart/alternative; boundary="MAILTRACE-ALT-001"
+
+--MAILTRACE-ALT-001
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Hello Bob and team,
+
+This is a confirmation for our project meeting on Tuesday, 15 September 2026 at 10:00 AM UTC.
+
+Agenda:
+1. Review the current project status.
+2. Confirm the next delivery milestone.
+3. Assign follow-up tasks.
+
+Project workspace: https://example.net/projects/mailtrace
+Documentation: https://docs.example.net/guides/email-testing
+Calendar: https://example.net/projects/mailtrace/issues/12345
+
+No action is required before the meeting.
+
+Regards,
+Alice Johnson
+Engineering Team
+
+--MAILTRACE-ALT-001
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE html>
+<html>
+	<body>
+		<h2>Project Meeting Confirmation</h2>
+		<p>Hello Bob and team,</p>
+		<p>This is a confirmation for our project meeting on <strong>Tuesday, 15 September 2026 at 10:00 AM UTC</strong>.</p>
+		<h3>Agenda</h3>
+		<ol>
+			<li>Review the current project status.</li>
+			<li>Confirm the next delivery milestone.</li>
+			<li>Assign follow-up tasks.</li>
+		</ol>
+		<p><a href="https://example.net/projects/mailtrace">Project workspace</a></p>
+		<p><a href="https://docs.example.net/guides/email-testing">Documentation</a></p>
+		<p><a href="https://example.net/projects/mailtrace/issues/12345">Calendar event</a></p>
+		<p>No action is required before the meeting.</p>
+		<p>Regards,<br>Alice Johnson<br>Engineering Team</p>
+	</body>
+</html>
+
+--MAILTRACE-ALT-001--

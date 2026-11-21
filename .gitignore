@@ -1,0 +1,26 @@
+backend/.env
+backend/evidence/
+backend/models/*
+!backend/models/README.md
+backend/data/*.mmdb*
+backend/data/datasets/email_classifier/**/*.eml
+backend/data/datasets/email_classifier/**/*.mbox
+backend/data/datasets/email_classifier/**/*.tar.bz2
+*.joblib
+*.pkl
+*.pickle
+*.safetensors
+*.bin
+*.onnx
+models/
+frontend/.env
+frontend/node_modules/
+frontend/dist/
+venv/
+**/__pycache__/
+*.py[cod]
+
+# Project-specific presentation and report drafts
+PROJECT_REPORT.md
+script.md
+

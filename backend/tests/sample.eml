@@ -1,0 +1,89 @@
+From: "Company Security" <security@company.com>
+To: employee@company.com
+Reply-To: security-alert@company-support-login.com
+Return-Path: <bounce@company.com>
+Subject: URGENT: Account Verification Required
+Date: Mon, 14 Sep 2026 09:25:00 +0000
+Message-ID: <20260914092500.7A92F1C3@company.com>
+MIME-Version: 1.0
+X-Mailer: MailTrace-Test-Agent/1.0
+Authentication-Results: mx.company.com; spf=fail smtp.mailfrom=company.com; dkim=fail header.d=company.com; dmarc=fail header.from=company.com
+Received: from suspicious-host.example.net (suspicious-host.example.net [8.8.8.8]) by workstation-77 with SMTP; Mon, 14 Sep 2026 09:24:43 +0000
+Received: from workstation-77 (unknown [1.1.1.1]) by mail.company.com with ESMTP id DEF456; Mon, 14 Sep 2026 09:24:51 +0000
+Received: from mail.company.com (mail.company.com [192.30.252.1]) by mx.company.com with ESMTPS id ABC123; Mon, 14 Sep 2026 09:24:58 +0000
+Content-Type: multipart/mixed; boundary="BOUNDARY123"
+
+--BOUNDARY123
+Content-Type: text/plain; charset="UTF-8"
+
+URGENT SECURITY NOTICE
+
+Your company account requires immediate verification.
+
+We detected unusual activity on your account.
+
+Please verify your account immediately:
+
+https://company-support-login.com/secure/verify-account?user=employee@company.com&session=84931
+
+Alternative verification link:
+
+http://8.8.4.4/login/secure-account
+
+Shortened verification link:
+
+https://bit.ly/3SecurityVerify
+
+Please review the security notice and confirm your identity.
+
+Security Operations
+Company IT Department
+
+--BOUNDARY123
+Content-Type: text/html; charset="UTF-8"
+
+<html>
+<body>
+<h2>URGENT SECURITY NOTICE</h2>
+
+<p>Your company account requires <strong>immediate verification</strong>.</p>
+
+<p>We detected unusual activity on your account.</p>
+
+<p>
+<a href="https://company-support-login.com/secure/verify-account?user=employee@company.com&session=84931">
+Verify your account
+</a>
+</p>
+
+<p>
+<a href="http://8.8.4.4/login/secure-account">
+Alternative verification
+</a>
+</p>
+
+<p>
+<a href="https://bit.ly/3SecurityVerify">
+Secure Login
+</a>
+</p>
+
+<p>
+<a href="https://xn--c0mpany-9za.example/secure/login">
+Security Portal
+</a>
+</p>
+
+<p>Security Operations<br>Company IT Department</p>
+
+</body>
+</html>
+
+--BOUNDARY123
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="security_report.exe"
+Content-Transfer-Encoding: base64
+
+TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+--BOUNDARY123--

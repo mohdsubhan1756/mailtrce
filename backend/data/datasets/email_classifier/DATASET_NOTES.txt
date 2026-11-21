@@ -1,0 +1,25 @@
+MailTrace email classifier dataset notes
+Downloaded: 2026-11-07
+
+phishing/
+- 481 individual messages converted from the Nazario phishing-2025 collection.
+- Source: https://monkey.org/~jose/phishing/phishing-2025
+- The source README describes the corpus as hand-classified and representative
+  of one personal inbox; it may contain classification errors.
+- The source states CC BY 4.0 and requires attribution. See
+  raw\nazario\README.txt and raw\nazario\LICENSE.txt.
+
+nonspam/
+- 1,652 individual messages extracted from SpamAssassin's 20030228 easy_ham_2
+  and hard_ham archives.
+- Source: https://spamassassin.apache.org/old/publiccorpus/
+- "Ham" means non-spam in that corpus; it does not guarantee each message is
+  legitimate or safe. The source README says message text copyright remains
+  with original senders. See raw\spamassassin\readme.html.
+- The corpus README says not to send these messages into live email systems.
+
+These are old, imbalanced, differently sourced datasets. Do not treat the
+nonspam label as verified legitimate mail, and do not claim model performance
+from these data without manual review and campaign/time-separated evaluation.
+Keep all samples offline; do not open links or attachments or submit messages
+to external reputation services.
